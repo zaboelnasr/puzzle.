@@ -360,6 +360,7 @@
       <div class="col-md-6">
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email" required>
+        
       </div>
       <div class="col-md-6">
         <label for="password">Password</label>
@@ -375,9 +376,16 @@
         <button type="submit" class="btn btn-primary">Login</button>
       </div>
     </div>
+    <div>
+      <span>Email entered: {{ email }}</span>
+      <span>Password entered: {{ password }}</span>
+      <span>confirm-Password entered: {{ confirm-password }}</span>
+    </div>
     
-  
-  
+
+
+
+    
   </app-login>
   <!-- Resources -->
   <h2>Resources</h2>
