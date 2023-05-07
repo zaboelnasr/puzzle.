@@ -349,7 +349,36 @@
     </svg>
 
   </div>
+  <app-login>
 
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Login</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" class="form-control" [(ngModel)]="confirmPassword" required>
+      </div>
+      <div class="col-md-6">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+    
+  
+  
+  </app-login>
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
