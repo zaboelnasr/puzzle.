@@ -18,10 +18,11 @@ import { NgModule } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent {
-  email: string = '';
-  password: string = '';
-  confirmPassword: string = '';
+  email= '';
+  password='';
+  confirmPassword= '';
 
   onSubmit() {
     console.log('Email: ' + this.email);
