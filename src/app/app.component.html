@@ -373,7 +373,7 @@
         <input type="password" id="confirm-password" name="confirm-password" class="form-control" [(ngModel)]="confirmPassword" required>
       </div>
       <div class="col-md-6">
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-primary"(click)="onSubmit()" >Login</button>
       </div>
     </div>
     <div>

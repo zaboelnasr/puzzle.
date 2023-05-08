@@ -9,6 +9,10 @@
     <label for="confirmPassword">Confirm Password</label>
     <input type="password" id="confirmPassword" name="confirmPassword"class="form-control" [(ngModel)]="confirmPassword"required>
   
-    <button type="submit">Login</button>
+    <button type="submit"(click)="onSubmit()">Login</button>
   </form>
-  
+  <div>
+    <span>Email entered: {{email}}</span>
+    <span>Password entered: {{password}}</span>
+    <span>confirm-Password entered: {{confirm-password}}</span>
+  </div>
