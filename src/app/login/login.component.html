@@ -1,5 +1,5 @@
 <p>login works!</p>
-<form (ngSubmit)="onSubmit()">
+<form class="example-form" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
     <label for="email">Email address</label>
     <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email" required>
   
@@ -12,7 +12,7 @@
     <button type="submit"(click)="onSubmit()">Login</button>
   </form>
   <div>
-    <span>Email entered: {{ email }}</span>
-    <span>Password entered: {{ password }}</span>
-    <span>confirm-Password entered: {{ confirmpassword }}</span>
+    <span id="email">Email entered: {{email}}</span><br>
+    <span id="inputPassword">Password entered: {{password}}</span><br>
+    <span id="inputconfirm">confirm-Password entered: {{confirmpassword}}</span>
   </div>

@@ -29,4 +29,5 @@ export class LoginComponent {
     console.log('Password: ' + this.password);
     console.log('Confirm Password: ' + this.confirmPassword);
   }
+  
 }
