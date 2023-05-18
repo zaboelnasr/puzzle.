@@ -23,6 +23,7 @@ export class LoginComponent {
   email= '';
   password='';
   confirmPassword= '';
+  loginError = '';
 
   onSubmit() {
     console.log('Email: ' + this.email);
@@ -32,7 +33,7 @@ export class LoginComponent {
 
   login() {
     // Überprüfung des Benutzernamens
-    if (!this.isValidEmail(this.username)) {
+    if (!this.isValidEmail(this.email)) {
       this.loginError = 'Invalid email address';
       return;
     }

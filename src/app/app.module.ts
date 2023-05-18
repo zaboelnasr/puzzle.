@@ -5,13 +5,13 @@ import { AppComponent } from './app.component';
 
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignupComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignUpComponent
+    SignupComponent
   ],
   imports: [
     BrowserModule,
