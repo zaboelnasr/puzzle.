@@ -26,10 +26,15 @@ export class LoginComponent {
   loginError = '';
 
   onSubmit() {
+    if (this.email === 'test@test.at' && this.password === '12345678') {
+      console.log('Login successful.');
+    } else {
+    console.log('Login failed.'); 
     console.log('Email: ' + this.email);
     console.log('Password: ' + this.password);
     console.log('Confirm Password: ' + this.confirmPassword);
   }
+}
 
   login() {
     // Überprüfung des Benutzernamens
@@ -50,11 +55,9 @@ export class LoginComponent {
   }
 
   // Hilfsmethode zur Überprüfung der E-Mail-Adresse
-  private isValidEmail(email: string): boolean {
-    // Implementiere hier die Logik zur Überprüfung der E-Mail-Adresse
-    // Du kannst eine reguläre Ausdruck oder eine andere Methode verwenden
-    // In diesem Beispiel wird eine einfache Überprüfung auf das Vorhandensein eines @-Symbols durchgeführt
-    return email.includes('@');
+  isValidEmail(email: string): boolean {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
   }
   
 }
