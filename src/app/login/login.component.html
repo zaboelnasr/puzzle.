@@ -11,6 +11,7 @@
   
     <button type="submit"(click)="onSubmit()">Login</button>
   </form>
+  <div *ngIf="loginError" class="error">{{ loginError }}</div>
   <div>
     <span id="email">Email entered: {{email}}</span><br>
     <span id="inputPassword">Password entered: {{password}}</span><br>
