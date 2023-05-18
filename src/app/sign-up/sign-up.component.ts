@@ -7,15 +7,24 @@ import { Routes } from '@angular/router';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignupComponent {
-  username: string = '';
+  email: string = '';
   password: string = '';
   confirmPassword: string = '';
   address: string = '';
   zipcode: string = '';
+  company: string = '';
   registrationError: string = '';
 
+  onSubmit() {
+    if (this.email === 'test@test.at' && this.password === '12345678') {
+      console.log('Sign Up successful.');
+    } else {
+      console.log('Sign Up failed.');
+    }
+  }
+
   signup() {
-    if (!this.isValidEmail(this.username)) {
+    if (!this.isValidEmail(this.email)) {
       this.registrationError = 'Invalid email address';
       return;
     }
