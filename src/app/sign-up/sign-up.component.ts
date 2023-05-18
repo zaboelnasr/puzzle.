@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Routes } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -36,4 +37,9 @@ export class SignupComponent {
   private isValidEmail(email: string): boolean {
     return email.includes('@');
   }
+  routes: Routes = [
+    // Other routes...
+    { path: 'signup', component: SignupComponent },
+  ];
+  
 }
